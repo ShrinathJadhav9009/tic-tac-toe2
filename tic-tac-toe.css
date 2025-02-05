@@ -1,0 +1,80 @@
+/* styles.css */
+
+/* General body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Heading styling */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Game board styling */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+/* Individual cell styling */
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for cells */
+.cell:hover {
+    background-color: #f9f9f9;
+}
+
+/* Styling for player X */
+.cell.x {
+    color: #ff6347; /* Tomato color */
+}
+
+/* Styling for player O */
+.cell.o {
+    color: #4682b4; /* SteelBlue color */
+}
+
+/* Game status message styling */
+#status {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Reset button styling */
+#reset {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for reset button */
+#reset:hover {
+    background-color: #555;
+}
